@@ -30,4 +30,4 @@ Bevor Sie das Skript ausführen, müssen Sie eine Konfigurationsdatei namens `co
 ```
 ## Lizenz
 
-Dieses Programm ist unter der MIT-Lizenz lizenziert.
+Dieses Projekt ist unter der MIT Lizenz lizenziert - siehe die LICENSE Datei für Details.
