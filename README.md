@@ -21,7 +21,7 @@ Stellen Sie sicher, dass der Ordner `C:\data\` auf Ihrem Laufwerk C: existiert. 
 ### Schritt 2: Einrichten des `runZOOM-Hosts` Ordners
 
 1. Klonen oder laden Sie den `runZOOM-Hosts` Ordner von GitHub herunter.
-2. Kopieren Sie den heruntergeladenen Ordner in `C:\data\`.
+2. Entpacken und Kopieren Sie den heruntergeladenen Ordner in `C:\data\`.
 
 ### Schritt 3: Erstellen einer Desktop-Verknüpfung
 
