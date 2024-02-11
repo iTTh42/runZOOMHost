@@ -1,0 +1,29 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Zoom\Zoom Meetings\Chat]
+"DisableLinkPreviewInChat"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Zoom\Zoom Meetings\General]
+"AutoStartInSystemTray"=dword:00000001
+"DisableZoomApps"=dword:00000001
+"DisableZoomOnboarding"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Zoom\Zoom Meetings\Meetings]
+"DisableLocalRecording"=dword:00000001
+"DisableMeetingFileTransfer"=dword:00000001
+"EnableShareVideo"=dword:00000001
+"EnableShareAudio"=dword:00000001
+"TurnOffVideoCameraOnJoin"=dword:00000001
+"DisableMeetingChat"=dword:00000001
+"DisableWhiteBoard"=dword:00000001
+"PresentToRoomOptimizeVideo"=dword:00000001
+"DisableAnnotation"=dword:00000001
+"DisableCloudRecording"=dword:00000001
+"DisableMeeting3rdPartyFileStorage"=dword:00000001
+"DisableRemoteControl"=dword:00000001
+"DisableInMeetingZoomNotes"=dword:00000001
+"AutoAdjustAudioSettings"=dword:00000001
+"DisableInMeetingWhiteBoard"=dword:00000001
+"DisableSmartMeetingSummaries"=dword:00000001
+"DisableAICQueries"=dword:00000001
+"HideSelfView"=dword:00000001
