@@ -27,3 +27,7 @@ Bevor Sie das Skript ausführen, müssen Sie eine Konfigurationsdatei namens `co
     "height": 600
   }
 }
+
+## Lizenz
+
+Dieses Programm ist unter der MIT-Lizenz lizenziert.
