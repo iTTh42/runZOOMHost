@@ -23,13 +23,7 @@ Stellen Sie sicher, dass der Ordner `C:\data\` auf Ihrem Laufwerk C: existiert. 
 1. Klonen oder laden Sie den `runZOOM-Hosts` Ordner von GitHub herunter.
 2. Kopieren Sie den heruntergeladenen Ordner in `C:\data\`.
 
-## Einrichten der Automatisierung
-
-### Schritt 1: Erstellen eines VBScript
-
-Erstellen Sie ein VBScript, das Ihr PowerShell-Skript (`StartZoomMeeting.ps1`) verdeckt ausführt. Speichern Sie dieses Skript an einem bevorzugten Ort, z.B. auf Ihrem Desktop.
-
-### Schritt 2: Erstellen einer Desktop-Verknüpfung
+### Schritt 3: Erstellen einer Desktop-Verknüpfung
 
 1. Rechtsklicken Sie auf den Desktop und wählen Sie `Neu` > `Verknüpfung`.
 2. Geben Sie den Pfad zum zuvor erstellten VBScript ein.
