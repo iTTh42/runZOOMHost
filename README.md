@@ -32,12 +32,6 @@ Stellen Sie sicher, dass der Ordner `C:\data\` auf Ihrem Laufwerk C: existiert. 
 
 Sie haben nun eine Verknüpfung auf Ihrem Desktop, die das Zoom Meeting mit dem von Ihnen spezifizierten Benutzernamen und Passcode startet, ohne eine sichtbare Konsole zu öffnen.
 
-## Wichtige Hinweise
-
-- Stellen Sie sicher, dass der Zoom Desktop-Client auf Ihrem System installiert ist.
-- Überprüfen Sie, ob die Ausführungsrichtlinien auf Ihrem System das Ausführen von Skripten zulassen.
-- Speichern Sie alle Skripte und Konfigurationsdateien sicher, um unbefugten Zugriff zu verhindern.
-
 ## Konfiguration
 
 Bevor Sie das Skript ausführen, müssen Sie eine Konfigurationsdatei namens `config.json` im selben Verzeichnis wie das Skript erstellen. Die Datei sollte folgende Struktur haben:
@@ -58,6 +52,12 @@ Bevor Sie das Skript ausführen, müssen Sie eine Konfigurationsdatei namens `co
   }
 }
 ```
+## Wichtige Hinweise
+
+- Stellen Sie sicher, dass der Zoom Desktop-Client auf Ihrem System installiert ist.
+- Überprüfen Sie, ob die Ausführungsrichtlinien auf Ihrem System das Ausführen von Skripten zulassen.
+- Speichern Sie alle Skripte und Konfigurationsdateien sicher, um unbefugten Zugriff zu verhindern.
+
 ## Lizenz
 
 Dieses Projekt ist unter der MIT Lizenz lizenziert - siehe die LICENSE Datei für Details.
