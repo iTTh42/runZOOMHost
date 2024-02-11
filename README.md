@@ -1,25 +1,29 @@
-# runZOOM
+# Zoom Meeting Automatisierungsskript
 
-# Automatische Zoom-Teilnahme
-
-Dieses Skript ermöglicht die automatische Teilnahme an Zoom-Meetings mit Hilfe einer Konfigurationsdatei (`config.json`), in der Meeting-ID, Benutzername und Passcode gespeichert sind.
+Dieses PowerShell-Skript ermöglicht die automatisierte Teilnahme an einem Zoom-Meeting, einschließlich der Einstellung von Benutzername und Passcode aus einer Konfigurationsdatei sowie der Anpassung der Fensterposition und -größe des Zoom-Meetings.
 
 ## Voraussetzungen
 
-- PowerShell muss auf dem System installiert sein.
-- Zoom Desktop-Client muss auf dem System installiert sein.
+- PowerShell 5.1 oder höher
+- Zoom Desktop-Client installiert
+- Windows-Betriebssystem
 
-## Konfigurationsdatei
+## Konfiguration
 
-Erstellen Sie eine Datei namens `config.json` im selben Verzeichnis wie das Skript und fügen Sie die Meeting-Informationen wie folgt hinzu:
+Bevor Sie das Skript ausführen, müssen Sie eine Konfigurationsdatei namens `config.json` im selben Verzeichnis wie das Skript erstellen. Die Datei sollte folgende Struktur haben:
 
 ```json
 {
-    "MEETING_ID": "1234567890",
-    "USER_NAME": "Meeting Teilnehner",
-    "PASSCODE": "1234"
+  "userData": {
+    "MEETING_ID": "123456789",
+    "USER_NAME": "Ihr Name",
+    "PASSCODE": "Meeting-Passwort"
+  },
+  "zoomProcessFound": true,
+  "windowPosition": {
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 600
+  }
 }
-```
-## Lizenz
-
-Dieses Projekt ist unter der MIT-Lizenz lizenziert. Weitere Informationen finden Sie in der LICENSE.md-Datei.
