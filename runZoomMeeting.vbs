@@ -1,5 +1,5 @@
 Set objShell = CreateObject("Wscript.Shell")
-psScriptPath = ".\StartZoomMeeting.ps1"
+psScriptPath = ".\runZoomMeeting.ps1"
 
 ' Bauen Sie den Befehl, um PowerShell verdeckt zu starten
 Command = "powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -File """ & psScriptPath & """"
