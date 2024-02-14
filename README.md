@@ -14,14 +14,14 @@ Diese Anleitung führt Sie durch die Einrichtung eines Automatisierungsskripts f
 
 ## Vorbereitung
 
-### Schritt 1: Überprüfen des `C:\data\` Ordners
+### Schritt 1: Überprüfen des `C:\opt\` Ordners
 
-Stellen Sie sicher, dass der Ordner `C:\data\` auf Ihrem Laufwerk C: existiert. Falls dieser Ordner nicht existiert, erstellen Sie ihn manuell über den Datei-Explorer oder die Kommandozeile.
+Stellen Sie sicher, dass der Ordner `C:\opt\` auf Ihrem Laufwerk C: existiert. Falls dieser Ordner nicht existiert, erstellen Sie ihn manuell über den Datei-Explorer oder die Kommandozeile.
 
 ### Schritt 2: Einrichten des `runZOOM-Hosts` Ordners
 
 1. Klonen oder laden Sie den `runZOOM-Hosts` Ordner von GitHub herunter.
-2. Entpacken und Kopieren Sie den heruntergeladenen Ordner in `C:\data\`.
+2. Entpacken und Kopieren Sie den heruntergeladenen Ordner in `C:\opt\`.
 
 ### Schritt 3: Erstellen einer Desktop-Verknüpfung
 
