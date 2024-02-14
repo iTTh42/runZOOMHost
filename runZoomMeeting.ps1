@@ -1,4 +1,4 @@
-﻿Write-Host "Lese die Konfiguration aus der Datei: $configPath"
+Write-Host "Lese die Konfiguration aus der Datei: $configPath"
 $configPath = ".\config.json"
 
 $configJson = Get-Content $configPath | ConvertFrom-Json
@@ -18,8 +18,6 @@ $ENCODED_USER_NAME = $USER_NAME -replace ' ', '%20'
 Write-Host "Starte Zoom-Meeting mit Meeting-ID: $MEETING_ID und Benutzername: $USER_NAME"
 Start-Process "zoommtg://zoom.us/join?confno=$MEETING_ID&uname=$ENCODED_USER_NAME&pwd=$PASSCODE"
 Write-Host "Zoom wird gestartet"
-
-Start-Sleep -Seconds 2
 
 Write-Host "Warte auf Verbindung"
 do {
@@ -44,27 +42,22 @@ if ($zoomProcessFoundFromConfig) {
         Start-Sleep -Seconds 1
         $zoomProcesses = Get-Process | Where-Object { $_.MainWindowTitle -like "*Zoom Meeting*" }
         foreach ($proc in $zoomProcesses) {
-            if ($proc.MainWindowHandle -ne 0 -and $proc.TotalProcessorTime.TotalSeconds -gt 4.0) {
-                Write-Host "Zoom-Meeting-Fenster gefunden. Bereite vor für die Anpassung."
-                $zoomProcessFound = $true
-                break
-            }
+            Write-Host "Zoom-Meeting-Fenster gefunden. Bereite vor für die Anpassung."
+            $zoomProcessFound = $true
+            break
         }
     } while (-not $zoomProcessFound)
 }
 
-# Sicherstellen, dass die erforderlichen Typen für die SendKeys Methode hinzugefügt werden
 Add-Type -AssemblyName System.Windows.Forms
 
-# Eine kurze Verzögerung, um sicherzustellen, dass das Zoom-Fenster den Fokus hat
 Start-Sleep -Seconds 1
 
 if ($zoomProcessFound) {
     Write-Host "Sende Alt+U Tastenkombination, um die Teilnehmerliste zu öffnen."
     [System.Windows.Forms.SendKeys]::SendWait("%u")
 
-    # Warten Sie einen Moment, bevor Sie die Größe und Position anpassen, um sicherzustellen, dass die Tastenkombination wirkt
-    Start-Sleep -Seconds 2
+    Start-Sleep -Seconds 1
 
     Write-Host "Passe Größe und Position des Zoom-Meeting-Fensters an..."
     if ($proc.MainWindowHandle -ne 0) {
