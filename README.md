@@ -20,7 +20,7 @@ Stellen Sie sicher, dass der Ordner `C:\opt\` auf Ihrem Laufwerk C: existiert. F
 
 ### Schritt 2: Einrichten des `runZOOM-Hosts` Ordners
 
-1. Klonen oder laden Sie den `runZOOM-Hosts` Ordner von GitHub herunter.
+1. Klonen oder laden Sie den `runZOOMHost` Ordner von GitHub herunter.
 2. Entpacken und Kopieren Sie den heruntergeladenen Ordner in `C:\opt\`.
 
 ### Schritt 3: Erstellen einer Desktop-Verknüpfung
